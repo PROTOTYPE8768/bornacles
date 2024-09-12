@@ -1,0 +1,14 @@
+.btn{
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    color: $clr-light;
+    text-align: center;
+    transition: 0.5s ease;
+    &.bg--primary{
+        background-color: $clr-primary;
+    }
+    &:hover{
+        background-color: $clr-dark;
+    }
+}

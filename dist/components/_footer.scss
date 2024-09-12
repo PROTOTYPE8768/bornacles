@@ -1,0 +1,205 @@
+.footer{
+    background-image: url(../img/footer-bg-1.jpg);
+    background-size: cover;
+  
+    &__wrapper-info{
+        padding: 2rem;
+        color: $clr-light;
+        h1{
+            font-size: 2.4rem;
+            font-weight: 600;
+            padding-bottom: 3rem;
+        }
+    }
+    &__about{           
+        p{
+            font-size: 1.5rem;
+            padding-bottom: 2rem;
+        }
+        a{
+            text-decoration: none;
+            color: $clr-light;
+            background-color: $clr-primary;
+            padding: 2.2rem 4.1rem;
+            font-weight: 800;
+            font-size: 1.7rem;
+            display: inline-block;
+            
+           &:hover{
+            
+            background-color: $clr-light;
+            color: $clr-dark;
+            transition: .3s ease;
+            
+           }
+        }
+        
+    }
+    &__links{ 
+        padding-top: 4rem;
+        ul{
+            padding-bottom: 5rem;
+            li{
+                padding-bottom: 1.8rem;
+                font-size: 1.4rem;
+                
+            }
+        }
+        
+    }
+    &__info{
+        display: flex;
+        gap: 1rem;
+
+      ul{
+        padding-bottom: 5rem;
+        li{
+            font-size: 1.4rem;
+            font-weight: 600;
+            padding-bottom: 2rem;
+            padding-top: 1rem;
+            border-bottom: 1px solid $clr-gray;
+            width: 40rem;        
+           i{
+            padding-right: 1.5rem;
+            color: $clr-primary;
+           }
+        }
+      }
+        
+    }
+    &__letter{
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    &__input{
+        display: flex;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        input{
+            padding: 2rem;
+            width: 41rem;
+            
+        }
+    }
+    &__next{
+        li{
+            position: relative;
+            right: 4rem;
+            top: 1.9rem;
+            color: $clr-primary;           
+        }
+    }
+    &__icons--letter{
+      ul{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        font-size: 1.8rem;
+        padding-bottom: 5rem;
+        li{
+            &:hover{
+                transition: .3s ease-in;
+                color: $clr-primary;
+            }
+        }
+      }
+       
+    }
+    &__copyright{
+        
+        h2{
+            font-size: 1.3rem;
+            font-weight: 500;
+            padding: 2rem;
+            color: $clr-light;
+          
+         
+            span{
+                color: $clr-primary;
+                &:hover{
+                    transition: .3s ease;
+                    color: $clr-light;
+                }        
+            }
+          
+        }
+       
+    }
+
+    &__term{
+        ul{
+            display: none;
+        }
+    }
+    @include mediaQuery($break-md){
+        
+        &__wrapper-info{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__about{
+           p{
+            width: 28rem;
+            padding-bottom: 5rem;
+           }
+        }
+        &__links{
+            margin-top: -4rem;
+            padding-right: 3.5rem;
+           ul{
+            li{
+              width: 10rem;
+                  padding-bottom: 3rem;
+        
+            }
+           }
+        }
+        &__info{
+            ul{
+                li{
+                    width: 28rem;
+                }
+            }
+        }
+        &__letter{
+            p{
+                width: 32rem;
+            }
+            
+        }
+        &__input-text{
+            input{
+                width: 32rem;
+            }
+        }
+        &__condition{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+        &__term{
+            color: $clr-light;
+            padding-top: 2rem;
+            ul{
+                display: block;
+                display: flex;
+                gap: 1rem;               
+                padding-right: 6rem;
+                li{
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    &:hover{
+                        transition: .3s ease;
+                        color: $clr-primary;
+                    }
+                    
+                }
+            }
+        }
+    }
+   
+}

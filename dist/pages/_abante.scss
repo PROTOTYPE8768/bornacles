@@ -1,0 +1,284 @@
+.services{
+    background-image: url("../img/featured-title-bg.jpg");
+    padding-top: 8rem;
+    background-size: cover;
+
+    .container{
+    padding: 15rem 0;
+    position: relative;
+
+    
+    .services__wrapper{
+        
+       .title{
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 4rem;
+        margin-left: 2rem;
+        font-weight: 1000;
+       }
+    }
+    .home{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: inline-block;
+        padding: 8px 30px;
+        background-color: yellow;
+        .home__inner{
+            display: flex;
+        }
+    }
+}
+
+}
+@include mediaQuery($break-md){
+    .services{
+        margin-top: 10rem;
+    }
+}
+
+
+.whatwe{
+
+    background-image: url(../img/h4-section-bg-01.jpg);
+    
+
+
+    &__wrapper{
+        @include centerAll();
+        flex-direction: column;
+        padding: 10rem 0 35rem 0;
+        span{
+            width: 3rem;
+            height: .2rem;
+            background-color: yellow;
+            margin-bottom: 1rem;
+        }
+        .txt{
+            font-size: 2.8rem;
+            letter-spacing: .4rem;
+            font-weight: 600;
+            text-align: center;
+        }
+        p{
+            margin: 1.5rem 0;
+            font-size: 14px;
+            line-height: 1.858px;
+            letter-spacing: .2em;
+            
+        }
+    }
+
+    @include mediaQuery($break-lg){
+        &__wrapper{
+            .txt{
+                font-size: 5rem;
+            }
+        }
+    }
+}
+
+
+.offer{
+
+    @include mediaQuery($break-lg){
+        .offer__wrapper{
+        flex-direction: row;
+        .card{
+            margin: 0 1.5rem;
+        }
+    }
+    }
+
+    &__wrapper{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -310px;
+        
+
+        .card{
+            width: 100%;
+            max-width: 38rem;
+            text-align: left;
+            margin: 0 1rem;
+            box-shadow: 0 0 60px 10px rgba(0,0,0,.1); 
+            background-color: white;
+            transition: ease .5s;
+            margin-bottom: 2rem;
+
+            .card__img{
+                overflow: hidden;
+                max-height: 30rem;
+
+                img{    
+                    transition: ease .5s;
+                    width: 100%;
+                    overflow: hidden;
+                }
+                }
+            .text{
+                padding: 4rem;
+                h1{
+                    font-size: 2.8rem;
+                    margin-bottom: 2rem;
+                }
+                p{
+                    margin-bottom: 2rem;
+                    letter-spacing: .1rem;
+                    line-height: 3rem;
+                    font-size: 1.8rem;
+                }
+                .readmore{
+                    
+                    .readmore__txt{
+                        transition: ease .2s;
+                        font-weight: 500;
+                    }
+                }
+             
+        }
+        }
+
+
+//hover card
+        .card:hover{
+            box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.25); 
+
+            img{
+                scale: 1.1;
+            }
+            .readmore{
+                .readmore__txt{
+                    color: yellow;
+                }
+            }
+        }
+    }
+}
+
+
+.whyus{
+    &__wrapper{
+        display: flex;
+        margin: 5rem 0;
+        flex-direction: column;
+        max-width: 80rem;
+        @include centerAll();
+        .title{
+            padding: 0 24px;
+            margin-bottom: 4rem;
+            span{
+            width: 3rem;
+            height: .2rem;
+            background-color: yellow;
+            margin-bottom: 1rem;
+            display: block;
+            }
+            .txt{
+             font-size: 3.5rem;
+             letter-spacing: .4rem;
+             font-weight: 600;
+             
+            }
+            p{
+            margin: 2.2rem 0;
+            font-size: 14px;
+            line-height: 1.858px;
+            letter-spacing: .2em;
+            
+         }
+        }
+        .desc{
+            padding: 0 24px;
+            width: 45rem;
+            margin-left: 10rem;
+            p{
+                margin-bottom: 2rem;
+                letter-spacing: .1rem;
+                line-height: 3rem;
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    @include mediaQuery($break-lg){
+        &__wrapper{
+            flex-direction: row;
+            max-width: 125rem;
+            @include centerAll();
+
+            .desc{
+                padding: 0;
+                width: 55rem;
+            }
+
+        }
+    }
+}
+
+.thiswhy{
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 0 5rem;
+        @include centerAll();
+        .choose__card{
+            display: flex;
+            flex-direction: column;
+            width: 35rem;
+            align-items: center;
+            margin-bottom: 3rem;
+
+            .icon{
+                font-size: 7rem;
+                color: white;
+                background-color: yellow;
+                margin-bottom: 2rem;
+                width: 100px;
+
+                text-align: center;
+              
+            }
+
+            .txt{
+                text-align: center;
+                @include centerAll();
+                flex-direction: column;
+                h1{
+                    max-width: 20rem;
+                    font-weight: 700;
+                    font-size: 2.4rem;
+                    margin-bottom: 1rem;
+                }
+                p{
+                    font-size: 2rem;
+                    max-width: 50rem;
+                }
+            }
+        }
+    }
+
+    @include mediaQuery($break-lg){
+        &__wrapper{
+            flex-direction: row;
+            margin: 0 auto;
+            .choose__card{
+                border-left: 2px rgba(0, 0, 0, 0.226) solid;
+                .txt{
+                    p{
+                        width: 24rem;
+                    }
+                }
+            }
+
+            .choose__card:nth-child(1){
+                border-left: none;
+            }
+        }
+    }
+}
